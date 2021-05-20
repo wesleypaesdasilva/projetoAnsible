@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: sgbd
   become: yes
   user: linuxtux
   roles:
