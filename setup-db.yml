@@ -1,0 +1,6 @@
+---
+- hosts: all
+  become: yes
+  user: linuxtux
+  roles:
+  - { role: install-db, tags: ["install_db"]}
