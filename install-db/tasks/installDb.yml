@@ -5,6 +5,7 @@
     state: latest
   become: yes
   with_items:
-    - mysql-server-5.6
+    - mariadb-server
+    - mariadb
     - python-mysqldb
   when: ansible_facts['distribution'] == "Ubuntu"
