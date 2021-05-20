@@ -12,3 +12,4 @@
     priv: 'wp_db_prd.*:ALL,GRANT'
     host: "%"
     state: present
+  when: ansible_facts['ansible_distribution'] == "Linux Mint"
