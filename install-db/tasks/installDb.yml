@@ -6,6 +6,6 @@
   become: yes
   with_items:
     - mariadb-server
-    - mariadb
+    - mariadb-client
     - python-mysqldb
   when: ansible_facts['distribution'] == "Ubuntu"
